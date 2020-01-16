@@ -14,7 +14,7 @@ struct CountriesAPIClient {
   
   static func getCountries(completion: @escaping (Result<[Country], AppError>) -> ()) {
     
-    let endpointURLString = ""
+    let endpointURLString = "https://restcountries.eu/rest/v2/name/united"
     
     guard let url = URL(string: endpointURLString) else {
       completion(.failure(.badURL(endpointURLString)))

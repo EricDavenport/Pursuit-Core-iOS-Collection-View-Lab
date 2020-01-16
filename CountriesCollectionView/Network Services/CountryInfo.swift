@@ -11,10 +11,10 @@ import Foundation
 struct Country: Codable {
   let name: String
   let capital: String
-  let region: String
+//  let region: String
   let population: Int
-  let currencies: Currency
-  let aplha2Code: String
+//  let currencies: Currency
+  var aplha2Code: String?
 }
 
 struct Currency: Codable {
